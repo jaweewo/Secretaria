@@ -11,17 +11,28 @@ body, html {
     background-color: black;
 }
 
+/* styles.css */
+
+/* Estilos por defecto para pantallas grandes */
 .scene {
-    width: 50%; /* Ajusta el ancho de la escena */
-    height: 50%; /* Ajusta la altura de la escena */
+    width: 50%;
+    height: 50%;
     perspective: 600px;
 }
 
 .heart {
-    width: 100%; /* Ajusta el ancho del corazón */
-    height: 100%; /* Ajusta la altura del corazón */
+    width: 100%;
+    height: 100%;
     position: relative;
     transform-style: preserve-3d;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .scene {
+        width: 70%;
+        height: 70%;
+    }
 }
 
 .image-container {
