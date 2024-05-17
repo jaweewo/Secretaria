@@ -30,6 +30,7 @@ body, html {
     background: url('images/Andrea.jpg') center/cover no-repeat;
     clip-path: url(#heartPath); /* Utiliza una referencia URL a un SVG para el clip-path */
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el centro */
 }
