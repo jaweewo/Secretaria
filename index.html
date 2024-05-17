@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corazón 3D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scene">
+        <svg style="position: absolute; width: 0; height: 0; overflow: hidden;">
+            <!-- Define el clip-path como un SVG path para la forma del corazón -->
+            <defs>
+                <clipPath id="heartPath" clipPathUnits="objectBoundingBox">
+                    <path d="M0.5 0.2
+         C 0.3 0.1 0.2 0 0.2 0.3
+         C 0.2 0.5 0.3 0.7 0.5 0.9
+         C 0.7 0.7 0.8 0.5 0.8 0.3
+         C 0.8 0 0.7 0.1 0.5 0.2Z"/>
+
+
+
+                </clipPath>
+            </defs>
+        </svg>
+        <!-- Fin del SVG -->
+        <div class="heart">
+            <div class="image-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
